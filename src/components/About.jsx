@@ -26,7 +26,7 @@ const About = () => {
                                 <p>Save money, save time to request many and unlimited designs 
                                     and get graphics for feedbacks promptly.</p>
                             </div>
-                            <div className="col-md-6 icons">
+                            <div className="col-md-6 icons mt-3 mt-md-0">
                                 <div className="imageContainer">
                                     <img src={support} alt="Easy to use"/>
                                 </div>
@@ -61,6 +61,10 @@ const AboutStyle = Styled.div`
         position: absolute;
         top: 24px;
         left: 0;
+
+        @media (max-width: 768px0) {
+            opacity: .5;
+        }
     }
 
     .container {

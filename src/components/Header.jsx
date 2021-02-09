@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Styled from 'styled-components';
 
-import { Link, NavLink } from 'react-router-dom';
-
 import logo from '../utilities/images/logo.svg';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
+
+import { Link } from 'react-scroll';
 
 
 const Header = () => {
@@ -14,6 +14,10 @@ const Header = () => {
 
     const handleOnclick = () => {
         setToggle(!toggle);
+    }
+
+    const handleMobileMenu = () => {
+        setToggle(false);
     }
 
     return (
@@ -28,9 +32,9 @@ const Header = () => {
                     </div>
                     <div className={toggle ? "navContainer active" : 'navContainer'}>
                         <ul>
-                            <NavLink to='/' activeClassName="active">Home</NavLink>
-                            <NavLink to='/#portfolio' activeClassName="active">Portfolio</NavLink>
-                            <NavLink to='/#pricing' activeClassName="active">Pricing</NavLink>
+                            <Link onClick={handleMobileMenu} exact to='/' className="active" smooth={true}>Home</Link>
+                            <Link onClick={handleMobileMenu} to='portfolio' smooth={true}>Portfolio</Link>
+                            <Link onClick={handleMobileMenu} to='pricing' smooth={true}>Pricing</Link>
                         </ul>
                         <div className="contact">+234 810 095 8576</div>
                     </div>
@@ -122,6 +126,7 @@ const Nav = Styled.nav`
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 color: #fff;
+                cursor: pointer;
 
             &:hover, &.active {
                 color: #FFA3A3;
