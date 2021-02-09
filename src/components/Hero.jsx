@@ -97,7 +97,7 @@ const HeroStyle = Styled.section`
             align-items: end;
 
             @media (max-width: 768px) {
-                font-size: 1rem;
+                font-size: .8rem;
             }
 
             .icons {
@@ -135,7 +135,7 @@ const HeroStyle = Styled.section`
             margin-bottom: 1.5rem;
 
             @media (max-width: 768px) {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 line-height: 40px;
                 margin-bottom: 1rem;
             }

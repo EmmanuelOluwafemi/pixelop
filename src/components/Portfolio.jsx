@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 
 const Portfolio = () => {
     return (
-        <PortfolioStyle>
+        <PortfolioStyle id="portfolio">
             <div className="container">
                 <h1>Our Stunning Portfolios</h1>
                 <p>Some networks believe that by only offering a basic tracking system their affiliates can reach a high level of creativity. We like to set the bar a lot higher by offering

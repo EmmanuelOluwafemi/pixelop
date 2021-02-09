@@ -29,8 +29,8 @@ const Header = () => {
                     <div className={toggle ? "navContainer active" : 'navContainer'}>
                         <ul>
                             <NavLink to='/' activeClassName="active">Home</NavLink>
-                            <NavLink to='/portfolio' activeClassName="active">Portfolio</NavLink>
-                            <NavLink to='/pricing' activeClassName="active">Pricing</NavLink>
+                            <NavLink to='/#portfolio' activeClassName="active">Portfolio</NavLink>
+                            <NavLink to='/#pricing' activeClassName="active">Pricing</NavLink>
                         </ul>
                         <div className="contact">+234 810 095 8576</div>
                     </div>

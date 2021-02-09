@@ -8,7 +8,7 @@ import { IoMdCheckmark } from 'react-icons/io';
 
 const Pricing = () => {
     return (
-        <PricingStyle style={{ backgroundImage: `url(${pricingBg})` }}>
+        <PricingStyle id="pricing" style={{ backgroundImage: `url(${pricingBg})` }}>
             <div className="container">
                 <h5>PRICING</h5>
                 <h1>Ready to use our service? 
