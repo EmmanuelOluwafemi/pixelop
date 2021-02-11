@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 import Styled from 'styled-components';
 
 import logo from '../utilities/images/logo.svg';
+import logoblack from '../utilities/images/logoBlack.svg';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 import { Link } from 'react-scroll';
 
 
-const Header = () => {
+const Header = ({ isblack }) => {
 
     const [toggle, setToggle] = useState(false);
 
@@ -28,15 +29,15 @@ const Header = () => {
             <div className="container">
                 <Nav>
                     <div className="logoContainer">
-                        <Link to='/'><img src={logo} alt="pixeloop logo"/></Link>
+                        <Link to='/'><img src={isblack ? logoblack : logo} alt="pixeloop logo"/></Link>
                     </div>
                     <div className={toggle ? "navContainer active" : 'navContainer'}>
                         <ul>
-                            <Link onClick={handleMobileMenu} exact to='/' className="active" smooth={true}>Home</Link>
-                            <Link onClick={handleMobileMenu} to='portfolio' smooth={true}>Portfolio</Link>
-                            <Link onClick={handleMobileMenu} to='pricing' smooth={true}>Pricing</Link>
+                            <Link onClick={handleMobileMenu} exact to='/' className={isblack ? "black" : 'active'} smooth={true}>Home</Link>
+                            <Link onClick={handleMobileMenu} to='portfolio' className={isblack ? "black" : ''} smooth={true}>Portfolio</Link>
+                            <Link onClick={handleMobileMenu} to='pricing' className={isblack ? "black" : ''} smooth={true}>Pricing</Link>
                         </ul>
-                        <div className="contact">+234 810 095 8576</div>
+                        <div className={isblack ? "contact black" : 'contact'}>+234 810 095 8576</div>
                     </div>
                     <GiHamburgerMenu onClick={handleOnclick} className="icons" />
                 </Nav>
@@ -128,9 +129,14 @@ const Nav = Styled.nav`
                 color: #fff;
                 cursor: pointer;
 
+
             &:hover, &.active {
                 color: #FFA3A3;
                 text-decoration: none;
+            }
+
+            &.black {
+                color: #333333;
             }
 
             @media (max-width: 786px) {
@@ -152,6 +158,10 @@ const Nav = Styled.nav`
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         color: #fff;
+
+        &.black {
+            color: #333333;
+        }
 
         @media (max-width: 768px) {
             color: #000;

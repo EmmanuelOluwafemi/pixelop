@@ -20,7 +20,7 @@ const Hero = () => {
                         <h1>Multiple and unlimited Graphic Designs for your business.</h1>
                         <p>Pixelop is a brand agency offering multiple and unlimited design solution for 
                             SMEs as well as startup on a monthly flat fee.</p>
-                        <Link className="cta">Start For Free</Link>
+                        <Link to="/register" className="cta">Start For Free</Link>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">
                         <img src={logomark} alt="pixel loop mark"/>

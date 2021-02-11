@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FuturaHeavyBT';
+    src: url('FuturaHeavyBT.ttf');
+    src: local('FuturaHeavyBT'), local('FuturaHeavyBT'),
+      url('FuturaHeavyBT.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

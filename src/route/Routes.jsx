@@ -5,13 +5,17 @@ import {
 } from "react-router-dom";
 
 import Home from "../pages/Home";
+import Register from "../pages/Register";
 
 const Routes = () => {
     return (
         <Router>
             <Switch>
-                <Route path='/'>
-                <Home />
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+                <Route path="/register">
+                    <Register />
                 </Route>
             </Switch>
         </Router>
