@@ -1,6 +1,13 @@
 import React from 'react';
 import Styled from 'styled-components';
 
+import calender from '../utilities/images/calender.jpg';
+import cream from '../utilities/images/cream.jpg';
+import card from '../utilities/images/card.jpg';
+import cardGrid from '../utilities/images/card-grid.jpg';
+import maniz from '../utilities/images/maniz.jpg';
+import promo from '../utilities/images/promo.jpg';
+
 const Portfolio = () => {
     return (
         <PortfolioStyle id="portfolio">
@@ -11,22 +18,34 @@ const Portfolio = () => {
 
                  <div className="row mt-4">
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                            <img className="img-fluid" src={calender} alt="portfolio item one"/>
+                         </div>
                      </div>
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                             <img className="img-fluid" src={cream} alt="portfolio item two"/>
+                         </div>
                      </div>
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                             <img className="img-fluid" src={promo} alt="portfolio item three"/>
+                         </div>
                      </div>
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                             <img className="img-fluid" src={maniz} alt="portfolio item four"/>
+                         </div>
                      </div>
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                             <img className="img-fluid" src={card} alt="portfolio item five"/>
+                         </div>
                      </div>
                      <div className="col-md-4">
-                         <div className="cardContainer"></div>
+                         <div className="cardContainer">
+                             <img className="img-fluid" src={cardGrid} alt="portfolio item six"/>
+                         </div>
                      </div>
                  </div>
             </div>
@@ -64,7 +83,6 @@ const PortfolioStyle = Styled.section`
         .row {
             .cardContainer {
                 width: 100%;
-                height: 419px;
                 margin-bottom: 1.25rem;
                 background: rgba(255, 245, 0, 0.2);
                 border-radius: 15px;

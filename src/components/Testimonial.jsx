@@ -2,6 +2,12 @@ import React from 'react';
 
 import Styled from 'styled-components';
 
+// image import 
+import avatar1 from '../utilities/images/avatar-1.png';
+import avatar2 from '../utilities/images/avatar-2.png';
+import avatar3 from '../utilities/images/avatar-3.png';
+import avatar4 from '../utilities/images/avatar-4.png';
+
 const Testimonial = () => {
     return (
         <TestimonialStyle>
@@ -18,61 +24,57 @@ const Testimonial = () => {
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="testimonialCard">
-                                    <p>“You made it so simple. My new site is so much faster and easier to 
-                                        work with than my old site. I just choose the page, 
-                                        make the change and click save.</p>
+                                    <p>The graphic solutions from Pixelop is always unique and speak the mind of the client. Good Job. </p>
                                     <div className="userDetails">
                                         <div className="avatar">
-
+                                            <img className="img-fluid" src={avatar1} alt="customer identity"/>
                                         </div>
                                         <div className="details">
-                                            <div className="name">Cameron Anderson</div>
-                                            <div className="position">Designer</div>
+                                            <div className="name">Abiodun Lawal</div>
+                                            <div className="position">Hemmsgreen Agricultural Projects</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-sm-6">
                                 <div className="testimonialCard">
-                                    <p>“Simply the best. Better than all the rest. I’d recommend 
-                                        this product to beginners and advanced users.”</p>
+                                    <p>Always there to satisfy your design needs. All you need is to 
+                                        say how and when you want it.'</p>
                                     <div className="userDetails">
                                         <div className="avatar">
-
+                                            <img className="img-fluid" src={avatar2} alt="customer identity"/>
                                         </div>
                                         <div className="details">
-                                            <div className="name">Leo Morton</div>
-                                            <div className="position">Marketer</div>
+                                            <div className="name">Ajala Tolani</div>
+                                            <div className="position">Public Health Advocate</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-sm-6">
                                 <div className="testimonialCard">
-                                    <p>“Finally, I’ve found a template that covers all bases for a bootstrapped startup. 
-                                        We were able to launch in days, not months.”</p>
+                                    <p>I strongly recommend Pixelop for every budding entrepreneur and start-up looking to take their business to the next level.</p>
                                     <div className="userDetails">
                                         <div className="avatar">
-
+                                            <img className="img-fluid" src={avatar3} alt="customer identity"/>
                                         </div>
                                         <div className="details">
-                                            <div className="name">Catherine Simmons</div>
-                                            <div className="position">Marketer</div>
+                                            <div className="name">Oludiran Yemi</div>
+                                            <div className="position">Rehoboth Computers</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-sm-6">
                                 <div className="testimonialCard">
-                                    <p>With Shades, it’s quicker with the customer, the customer is more ensured of 
-                                        getting exactly what they ordered, and I’m all for the efficiency.</p>
+                                    <p>Good Job with great business mindset, they created my beautiful logo and advert designs</p>
                                     <div className="userDetails">
-                                        <div className="avatar">
-
+                                        <div className="avatar">    
+                                            <img className="img-fluid" src={avatar4} alt="customer identity"/>
                                         </div>
                                         <div className="details">
-                                            <div className="name">Harvey Ingram</div>
-                                            <div className="position">UX Designer</div>
+                                            <div className="name">Bright Ituh</div>
+                                            <div className="position">Mathsbrain Tutors</div>
                                         </div>
                                     </div>
                                 </div>
