@@ -12,11 +12,11 @@ const Portfolio = () => {
     return (
         <PortfolioStyle id="portfolio">
             <div className="container">
-                <h1>Our Stunning Portfolios</h1>
-                <p>Some networks believe that by only offering a basic tracking system their affiliates can reach a high level of creativity. We like to set the bar a lot higher by offering
+                <h1 data-aos="fade-up" data-aos-duration="1000">Our Stunning Portfolios</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Some networks believe that by only offering a basic tracking system their affiliates can reach a high level of creativity. We like to set the bar a lot higher by offering
                  you cutting-edge tech solutions together with a team of creative experts.</p>
 
-                 <div className="row mt-4">
+                 <div data-aos="fade-up" data-aos-duration="1000" className="row mt-4">
                      <div className="col-md-4">
                          <div className="cardContainer">
                             <img className="img-fluid" src={calender} alt="portfolio item one"/>

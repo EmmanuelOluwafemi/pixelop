@@ -13,11 +13,11 @@ const About = () => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">
-                        <h6>Good Design is Good Business</h6>
-                        <h2>The perfect design plug for your business</h2>
-                        <p>Delegate your designs to experts who truly understand your brand, vision and values</p>
+                        <h6 data-aos="fade-right" data-aos-duration="1000">Good Design is Good Business</h6>
+                        <h2 data-aos="fade-right" data-aos-duration="1200">The perfect design plug for your business</h2>
+                        <p data-aos="fade-right" data-aos-duration="1400">Delegate your designs to experts who truly understand your brand, vision and values</p>
 
-                        <div className="row iconContainer">
+                        <div data-aos="fade-right" data-aos-duration="1600" className="row iconContainer">
                             <div className="col-md-6 icons">
                                 <div className="imageContainer">
                                     <img src={object} alt="Easy to use"/>
@@ -36,7 +36,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 aboutImage">
+                    <div data-aos="fade-left" data-aos-duration="1600" className="col-md-6 aboutImage">
                         <div className="background"></div>
                         <img src={about} alt="About us"/>
                     </div>

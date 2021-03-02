@@ -82,6 +82,7 @@ const HowStyled = Styled.section`
             text-decoration: none;
             border-radius: 10px;
             margin-top: 78px;
+            transition: .7s all ease;
 
             &:hover {
                 background: #FEF519;

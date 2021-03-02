@@ -8,12 +8,12 @@ const Cta = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <img className="user_identity" src={user} alt="pixeloop identity"/>
+                        <img data-aos="fade-right" data-aos-duration="1200" className="user_identity" src={user} alt="pixeloop identity"/>
                     </div>
                     <div className="user-content col-md-6">
-                        <h2>LET’S BUILD SOLUTIONS TOGETHER</h2>
-                        <h5>Emmanuel Oluyole</h5>
-                        <p>Team Lead, Pixelop</p>
+                        <h2 data-aos="fade-left" data-aos-duration="1200">LET’S BUILD SOLUTIONS TOGETHER</h2>
+                        <h5 data-aos="fade-left" data-aos-duration="1400">Emmanuel Oluyole</h5>
+                        <p data-aos="fade-left" data-aos-duration="1600">Team Lead, Pixelop</p>
                     </div>
                 </div>
             </div>

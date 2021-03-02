@@ -10,12 +10,12 @@ const Pricing = () => {
     return (
         <PricingStyle id="pricing" style={{ backgroundImage: `url(${pricingBg})` }}>
             <div className="container">
-                <h5>PRICING</h5>
-                <h1>Ready to use our service? 
+                <h5 data-aos="fade-up" data-aos-duration="1000">PRICING</h5>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Ready to use our service? 
                 Choose a package.</h1>
 
                 <div className="row">
-                    <div className="col-md-4 mb-3 mb-md-0 cardContainer">
+                    <div data-aos="fade-up" data-aos-duration="1000" className="col-md-4 mb-3 mb-md-0 cardContainer">
                         <div className="gridCard active">
                             <h5>Multiple Lite Plan</h5>
                             <h2>₦15,000 <span>/ month</span></h2>
@@ -29,7 +29,7 @@ const Pricing = () => {
                             <Link to='/register'>Get Started</Link>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-3 mb-md-0 cardContainer">
+                    <div data-aos="fade-up" data-aos-duration="1200" className="col-md-4 mb-3 mb-md-0 cardContainer">
                         <div className="gridCard">
                             <h5>UNLIMITED PLAN <span>Popular</span></h5>
                             <h2>₦15,000 <span>/ month</span></h2>
@@ -54,7 +54,7 @@ const Pricing = () => {
                             <Link to='/register'>Get Started</Link>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-3 mb-md-0 cardContainer">
+                    <div data-aos="fade-up" data-aos-duration="1400" className="col-md-4 mb-3 mb-md-0 cardContainer">
                         <div className="gridCard">
                             <h5>MULTIPLE PLAN <span>Popular</span></h5>
                             <h2>₦45,000 <span>/ month</span></h2>

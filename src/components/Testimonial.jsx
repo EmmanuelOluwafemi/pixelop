@@ -13,7 +13,7 @@ const Testimonial = () => {
         <TestimonialStyle>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-4 titleSection">
+                    <div data-aos="fade-right" data-aos-duration="1000" className="col-md-4 titleSection">
                         <h6>T E S T I M O N I A L S</h6>
                         <h2>50k+ users are showing love.</h2>
                         <p>We designed and tested prototypes that helped 
@@ -23,7 +23,7 @@ const Testimonial = () => {
                     <div className="col-md-8">
                         <div className="row">
                             <div className="col-sm-6">
-                                <div className="testimonialCard">
+                                <div data-aos="fade-up" data-aos-duration="1400" className="testimonialCard">
                                     <p>The graphic solutions from Pixelop is always unique and speak the mind of the client. Good Job. </p>
                                     <div className="userDetails">
                                         <div className="avatar">
@@ -37,7 +37,7 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div className="testimonialCard">
+                                <div data-aos="fade-up" data-aos-duration="1800" className="testimonialCard">
                                     <p>Always there to satisfy your design needs. All you need is to 
                                         say how and when you want it.'</p>
                                     <div className="userDetails">
@@ -52,7 +52,7 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div className="testimonialCard">
+                                <div data-aos="fade-up" data-aos-duration="2000" className="testimonialCard">
                                     <p>I strongly recommend Pixelop for every budding entrepreneur and start-up looking to take their business to the next level.</p>
                                     <div className="userDetails">
                                         <div className="avatar">
@@ -66,7 +66,7 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <div className="testimonialCard">
+                                <div data-aos="fade-up" data-aos-duration="2200" className="testimonialCard">
                                     <p>Good Job with great business mindset, they created my beautiful logo and advert designs</p>
                                     <div className="userDetails">
                                         <div className="avatar">    

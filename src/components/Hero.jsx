@@ -16,14 +16,14 @@ const Hero = () => {
             <div className="container">
                 <div class="row align-items-center">
                     <div className="col-md-6 col-lg-7 textContent">
-                        <p className="rating"> <AiFillStar className="icons" /> Top design company </p>
-                        <h1>Multiple and unlimited Graphic Designs for your business.</h1>
-                        <p>Pixelop is a brand agency offering multiple and unlimited design solution for 
+                        <p data-aos="fade-right" data-aos-duration="1000" className="rating"> <AiFillStar className="icons" /> Top design company </p>
+                        <h1 data-aos="fade-right" data-aos-duration="1200">Multiple and unlimited Graphic Designs for your business.</h1>
+                        <p data-aos="fade-right" data-aos-duration="1400">Pixelop is a brand agency offering multiple and unlimited design solution for 
                             SMEs as well as startup on a monthly flat fee.</p>
-                        <Link to="/register" className="cta">Start For Free</Link>
+                        <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">Start For Free</Link>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">
-                        <img src={logomark} alt="pixel loop mark"/>
+                        <img data-aos="fade-left" data-aos-duration="1000" src={logomark} alt="pixel loop mark"/>
                     </div>
                 </div>
             </div>

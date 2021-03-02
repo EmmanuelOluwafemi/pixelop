@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import About from '../components/About';
 // import Costomers from '../components/Costomers';
 import Cta from '../components/Cta';
@@ -9,7 +9,14 @@ import Portfolio from '../components/Portfolio';
 import Pricing from '../components/Pricing';
 import Testimonial from '../components/Testimonial';
 
+import AOS from "aos";
+
 const Home = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
             <Hero />
