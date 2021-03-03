@@ -36,7 +36,7 @@ export default Hero;
 const HeroStyle = Styled.section`
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #DD127B;
 
     .heroBg {
@@ -84,6 +84,8 @@ const HeroStyle = Styled.section`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 12px 1rem;
+                margin-top: .8rem;
             }
         }
 
@@ -119,7 +121,7 @@ const HeroStyle = Styled.section`
                 @media (max-width: 768px) {
                     font-size: .6rem;
                     margin-bottom: 1rem;
-                    margin-top: 2.5rem;
+                    margin-top: 0;
                 }
             }
         }
@@ -136,7 +138,7 @@ const HeroStyle = Styled.section`
 
             @media (max-width: 768px) {
                 font-size: 1.5rem;
-                line-height: 40px;
+                line-height: 32px;
                 margin-bottom: 1rem;
             }
         }
@@ -147,11 +149,12 @@ const HeroStyle = Styled.section`
 
             @media (max-width: 768px) {
                 justify-content: center;
-                order: 1;
 
                 img {
-                    width: 70%;
+                    width: 60%;
                     height: auto;
+                    margin-top: 1.3rem;
+                    margin-bottom: 2rem;
                 }
             }
         }
@@ -159,10 +162,6 @@ const HeroStyle = Styled.section`
         .textContent {
             display: flex;
             flex-direction: column;
-
-            @media (max-width: 768px) {
-                order: 2;
-            }
         }
     }
 `;

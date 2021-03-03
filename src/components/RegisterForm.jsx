@@ -10,63 +10,63 @@ const RegisterForm = () => {
             <RegisterFormStyle className="row">
                 <div className="col-md-6">
                     <Link to="/"><IoIosArrowBack className="icons" /> Back</Link>
-                    <h1>Sign Up</h1>
-                    <p>Perxels is an online community that provides training and 
+                    <h1 data-aos="fade-right" data-aos-duration="1000" >Sign Up</h1>
+                    <p data-aos="fade-right" data-aos-duration="1300" >Perxels is an online community that provides training and 
                     mentorship for User Interface and User Experience designers to 
                     grow and thrive in the Industry.</p>
 
-                    <h4>BASIC INFORMATION</h4>
+                    <h4 data-aos="fade-up" data-aos-duration="1400" >BASIC INFORMATION</h4>
 
                     <form>
                         <div className="row">
                             <div className="col-md-6">
-                                <div className="inputGroup">
+                                <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>FIRST NAME</label>
                                     <input type="text" placeholder="John" />
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className="inputGroup">
+                                <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>LAST NAME</label>
                                     <input type="text" placeholder="Doe" />
                                 </div>
                             </div>
                         </div>
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>EMAIL ADDRESS</label>
                             <input type="email" placeholder="john@abc.com"/>
                         </div>
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Phone Number</label>
                             <input type="text" placeholder="+2349348843"/>
                         </div>
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Company</label>
                             <input type="text" placeholder="Company Name"/>
                         </div>
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Selected Package</label>
                             <input type="text" placeholder="Packages"/>
                         </div>
 
-                        <h4>DESIGN BRIEF</h4>
+                        <h4 data-aos="fade-up" data-aos-duration="1000" >DESIGN BRIEF</h4>
                         
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Overview of Business</label>
                             <textarea></textarea>
                         </div>
                         
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Objective of design</label>
                             <textarea></textarea>
                         </div>
 
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Design title and info</label>
                             <textarea></textarea>
                         </div>
                         
-                        <div className="inputGroup">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Upload content/brief calendar (doc,pdf..)</label>
                             <input className="fileInput" type="file"/>
                         </div>
@@ -75,8 +75,8 @@ const RegisterForm = () => {
                     </form>
                 </div>
                 <div className="col-md-6 d-none d-md-block box-container">
-                    <div className="box"></div>
-                    <div className="box"></div>
+                    <div data-aos="fade-up" data-aos-duration="1400" className="box"></div>
+                    <div data-aos="fade-up" data-aos-duration="1400" className="box mt-5"></div>
                 </div>
             </RegisterFormStyle>
         </div>
