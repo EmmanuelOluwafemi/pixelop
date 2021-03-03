@@ -151,9 +151,9 @@ const HeroStyle = Styled.section`
                 justify-content: center;
 
                 img {
-                    width: 60%;
+                    width: 70%;
                     height: auto;
-                    margin-top: 1.3rem;
+                    margin-top: 2rem;
                     margin-bottom: 2rem;
                 }
             }
