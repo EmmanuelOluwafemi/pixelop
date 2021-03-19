@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 import Header from './Header';
 
 import herobg from '../utilities/images/herobg.png';
-import logomark from '../utilities/images/logomark.png';
+import heroImage from '../utilities/images/heroImage.png';
 
 import { AiFillStar } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
@@ -23,7 +23,7 @@ const Hero = () => {
                         <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">Start For Free</Link>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">
-                        <img data-aos="fade-left" data-aos-duration="1000" src={logomark} alt="pixel loop mark"/>
+                        <img data-aos="fade-left" data-aos-duration="1000" src={heroImage} alt="pixel loop mark"/>
                     </div>
                 </div>
             </div>

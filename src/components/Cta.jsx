@@ -1,6 +1,7 @@
 import Styled from 'styled-components';
 import user from '../utilities/images/user.png';
 import logomark from '../utilities/images/logomark.png';
+import { RiWhatsappFill } from 'react-icons/ri';
 
 const Cta = () => {
     return (
@@ -14,6 +15,10 @@ const Cta = () => {
                         <h2 data-aos="fade-left" data-aos-duration="1200">LET’S BUILD SOLUTIONS TOGETHER</h2>
                         <h5 data-aos="fade-left" data-aos-duration="1400">Emmanuel Oluyole</h5>
                         <p data-aos="fade-left" data-aos-duration="1600">Team Lead, Pixelop</p>
+                    </div>
+
+                    <div className="contact">
+                        <a href="/">SEND US A DIRECT MESSAGE ON WHATSAPP <RiWhatsappFill className="socialIcon" /></a>
                     </div>
                 </div>
             </div>
@@ -30,6 +35,7 @@ const CtaStyle = Styled.div`
     min-height: 300px;
     margin: 9.4375rem 0;
     margin-top: -2rem;
+    margin-bottom: 4rem;
 
     .logomark {
         position: absolute;
@@ -84,6 +90,43 @@ const CtaStyle = Styled.div`
 
             @media (max-width: 768px) {
                 text-align: center;
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        margin-top: 6rem;
+
+        a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #1F1F1F;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.625rem;
+            font-weight: 700;
+            transition: all .2s ease-in;
+
+            &:hover {
+                color: #000;
+            }
+
+            .socialIcon {
+                color: #4CAF50;
+                margin-left: 1.6rem;
+            }
+
+            @media (max-width: 720px) {
+                font-size: .9rem;
+
+                .social-icon {
+                    margin-left: .6rem;
+                }
             }
         }
     }

@@ -15,10 +15,9 @@ const Testimonial = () => {
                 <div className="row align-items-center">
                     <div data-aos="fade-right" data-aos-duration="1000" className="col-md-4 titleSection">
                         <h6>T E S T I M O N I A L S</h6>
-                        <h2>50k+ users are showing love.</h2>
-                        <p>We designed and tested prototypes that helped 
-                        identify pain points in the account creation process. 
-                        Together, we shaped the new standard.</p>
+                        <h2>100+ businesses trust our designs</h2>
+                        <p>We created identities, designs and styles that defined the visual communication from 
+                            launching to marketing of many businesses. Together we will create a standard. </p>
                     </div>
                     <div className="col-md-8">
                         <div className="row">

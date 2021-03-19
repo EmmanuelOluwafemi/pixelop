@@ -11,8 +11,7 @@ const Pricing = () => {
         <PricingStyle id="pricing" style={{ backgroundImage: `url(${pricingBg})` }}>
             <div className="container">
                 <h5 data-aos="fade-up" data-aos-duration="1000">PRICING</h5>
-                <h1 data-aos="fade-up" data-aos-duration="1000">Ready to use our service? 
-                Choose a package.</h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000">We have simple pricing that fits your budget. Choose a plan.</h1>
 
                 <div className="row">
                     <div data-aos="fade-up" data-aos-duration="1000" className="col-md-4 mb-3 mb-md-0 cardContainer">
