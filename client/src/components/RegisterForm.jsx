@@ -1,10 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
+import axios from 'axios';
+import { useForm } from "react-hook-form";
 
 import { IoIosArrowBack } from 'react-icons/io';
 
+import bg1 from '../utilities/images/bg-1.jpg';
+import bg2 from '../utilities/images/bg-2.jpg';
+
 const RegisterForm = () => {
+
+    const { register, handleSubmit } = useForm();
+
+    const [file, setFile] = useState();
+
+    const handleOnchage = e => {
+        setFile(e.target.value)
+    }
+
+    const onSubmit = data => {
+        const { fname, lname, email, pnumber, company, packages, overview, objective, title } = data;
+
+        axios.post('api/form', {
+            fname, lname, email, pnumber, company, packages, overview, objective, title, file
+        })
+    }
+
     return (
         <div className="container">
             <RegisterFormStyle className="row">
@@ -17,66 +39,70 @@ const RegisterForm = () => {
 
                     <h4 data-aos="fade-up" data-aos-duration="1400" >BASIC INFORMATION</h4>
 
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="row">
                             <div className="col-md-6">
                                 <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>FIRST NAME</label>
-                                    <input type="text" placeholder="John" />
+                                    <input ref={register} name="fname" type="text" placeholder="John" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>LAST NAME</label>
-                                    <input type="text" placeholder="Doe" />
+                                    <input ref={register} name="lname" type="text" placeholder="Doe" />
                                 </div>
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>EMAIL ADDRESS</label>
-                            <input type="email" placeholder="john@abc.com"/>
+                            <input ref={register} type="email" name="email" placeholder="john@abc.com"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Phone Number</label>
-                            <input type="text" placeholder="+2349348843"/>
+                            <input ref={register} type="text" name="pnumber" placeholder="+2349348843"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Company</label>
-                            <input type="text" placeholder="Company Name"/>
+                            <input ref={register} type="text" name="company" placeholder="Company Name"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Selected Package</label>
-                            <input type="text" placeholder="Packages"/>
+                            <input ref={register} type="text" name="packages" placeholder="Packages"/>
                         </div>
 
                         <h4 data-aos="fade-up" data-aos-duration="1000" >DESIGN BRIEF</h4>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Overview of Business</label>
-                            <textarea></textarea>
+                            <textarea ref={register} name="overview"></textarea>
                         </div>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Objective of design</label>
-                            <textarea></textarea>
+                            <textarea ref={register} name="objective"></textarea>
                         </div>
 
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Design title and info</label>
-                            <textarea></textarea>
+                            <textarea ref={register} name="title"></textarea>
                         </div>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Upload content/brief calendar (doc,pdf..)</label>
-                            <input className="fileInput" type="file"/>
+                            <input onChange={handleOnchage} className="fileInput" name="docFile" type="file"/>
                         </div>
 
                         <button type="submit">Submit Request</button>
                     </form>
                 </div>
                 <div className="col-md-6 d-none d-md-block box-container">
-                    <div data-aos="fade-up" data-aos-duration="1400" className="box"></div>
-                    <div data-aos="fade-up" data-aos-duration="1400" className="box mt-5"></div>
+                    <div data-aos="fade-up" data-aos-duration="1400" className="box">
+                        <img src={bg1} className="img-fluid" alt="background display"/>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1400" className="box mt-5">
+                        <img src={bg2} className="img-fluid" alt="background display"/>
+                    </div>
                 </div>
             </RegisterFormStyle>
         </div>
@@ -100,7 +126,7 @@ const RegisterFormStyle = Styled.div`
 
     .box {
         width: 100%;
-        height: 46%;
+        max-height: 46%;
         background: #ddd;
         margin-left: 6rem;
     }
