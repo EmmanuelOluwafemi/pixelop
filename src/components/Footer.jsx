@@ -19,9 +19,9 @@ const Footer = () => {
                     </div>
                     <div className="copyright col-md-6">
                         <div className="social-icons">
-                            <Link><FaFacebookF className="icons" /></Link>
-                            <Link><FaTwitter className="icons" /></Link>
-                            <Link><FaInstagram className="icons" /></Link>
+                            <a href="https://facebook.com/usepixelop"><FaFacebookF className="icons" /></a>
+                            <a href="https://twitter.com/usepixelop"><FaTwitter className="icons" /></a>
+                            <a href="https://instagram.com/usepixelop"><FaInstagram className="icons" /></a>
                         </div>
                         <p>Copyright © 2021. Pixelop. All rights reserved.</p>
                     </div>

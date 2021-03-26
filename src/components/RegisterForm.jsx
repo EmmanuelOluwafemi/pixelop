@@ -1,32 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
-import axios from 'axios';
-import { useForm } from "react-hook-form";
-
 import { IoIosArrowBack } from 'react-icons/io';
 
 import bg1 from '../utilities/images/bg-1.jpg';
 import bg2 from '../utilities/images/bg-2.jpg';
 
 const RegisterForm = () => {
-
-    const { register, handleSubmit } = useForm();
-
-    const [file, setFile] = useState();
-
-    const handleOnchage = e => {
-        setFile(e.target.value)
-    }
-
-    const onSubmit = data => {
-        const { fname, lname, email, pnumber, company, packages, overview, objective, title } = data;
-
-        axios.post('api/form', {
-            fname, lname, email, pnumber, company, packages, overview, objective, title, file
-        })
-    }
-
     return (
         <div className="container">
             <RegisterFormStyle className="row">
@@ -39,58 +19,66 @@ const RegisterForm = () => {
 
                     <h4 data-aos="fade-up" data-aos-duration="1400" >BASIC INFORMATION</h4>
 
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form action="https://formsubmit.co/usepixelop@gmail.com" method="POST" enctype="multipart/form-data">
+                        <input type="text" name="_honey" Style={"display:none"} />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="box" />
                         <div className="row">
                             <div className="col-md-6">
                                 <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>FIRST NAME</label>
-                                    <input ref={register} name="fname" type="text" placeholder="John" />
+                                    <input name="fname" type="text" placeholder="John" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                                     <label>LAST NAME</label>
-                                    <input ref={register} name="lname" type="text" placeholder="Doe" />
+                                    <input name="lname" type="text" placeholder="Doe" />
                                 </div>
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>EMAIL ADDRESS</label>
-                            <input ref={register} type="email" name="email" placeholder="john@abc.com"/>
+                            <input type="email" name="email" placeholder="john@abc.com"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Phone Number</label>
-                            <input ref={register} type="text" name="pnumber" placeholder="+2349348843"/>
+                            <input type="text" name="pnumber" placeholder="+2349348843"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Company</label>
-                            <input ref={register} type="text" name="company" placeholder="Company Name"/>
+                            <input type="text" name="company" placeholder="Company Name"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Selected Package</label>
-                            <input ref={register} type="text" name="packages" placeholder="Packages"/>
+                            <select name="package" id="package">
+                                <option className="isOPtion" value="">Select a Package</option>
+                                <option className="isOPtion" value="MULTIPLE LITE PLAN">MULTIPLE LITE PLAN</option>
+                                <option className="isOPtion" value="UNLIMITED PLAN">UNLIMITED PLAN</option>
+                                <option className="isOPtion" value="MULTIPLE PLAN">MULTIPLE PLAN</option>
+                            </select>
                         </div>
 
                         <h4 data-aos="fade-up" data-aos-duration="1000" >DESIGN BRIEF</h4>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Overview of Business</label>
-                            <textarea ref={register} name="overview"></textarea>
+                            <textarea name="overview"></textarea>
                         </div>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Objective of design</label>
-                            <textarea ref={register} name="objective"></textarea>
+                            <textarea name="objective"></textarea>
                         </div>
 
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Design title and info</label>
-                            <textarea ref={register} name="title"></textarea>
+                            <textarea name="title"></textarea>
                         </div>
                         
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
                             <label>Upload content/brief calendar (doc,pdf..)</label>
-                            <input onChange={handleOnchage} className="fileInput" name="docFile" type="file"/>
+                            <input className="fileInput" name="attachment" type="file" accept=".pdf,.doc,.docx" />
                         </div>
 
                         <button type="submit">Submit Request</button>
@@ -182,17 +170,22 @@ const RegisterFormStyle = Styled.div`
             color: #4E4E4E;
         }
 
-        input {
+        input, select {
             width: 100%;
             height: 40px;
             padding: 0 1rem;
             outline: none;
             border: 1px solid #D61177;
             border-radius: 4px;
-
+            
             &.fileInput {
                 border: none;
             }
+
+            option[selected=selected] {
+                    background: #D61177;
+            }
+
         }
 
         textarea {

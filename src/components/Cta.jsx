@@ -18,7 +18,7 @@ const Cta = () => {
                     </div>
 
                     <div className="contact">
-                        <a href="/">SEND US A DIRECT MESSAGE ON WHATSAPP <RiWhatsappFill className="socialIcon" /></a>
+                        <a href="https://wa.me/message/M7HVEB6TJYT5I1">SEND US A DIRECT MESSAGE ON WHATSAPP <RiWhatsappFill className="socialIcon" /></a>
                     </div>
                 </div>
             </div>
