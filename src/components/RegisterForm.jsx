@@ -13,9 +13,9 @@ const RegisterForm = () => {
                 <div className="col-md-6">
                     <Link to="/"><IoIosArrowBack className="icons" /> Back</Link>
                     <h1 data-aos="fade-right" data-aos-duration="1000" >Sign Up</h1>
-                    <p data-aos="fade-right" data-aos-duration="1300" >Perxels is an online community that provides training and 
-                    mentorship for User Interface and User Experience designers to 
-                    grow and thrive in the Industry.</p>
+                    <p data-aos="fade-right" data-aos-duration="1300" >Pixelop is a brand agency offering multiple and unlimited 
+                    design solution for SMEs as well as startup on a monthly flat fee. 
+                    Kindly fill in your information and make request.</p>
 
                     <h4 data-aos="fade-up" data-aos-duration="1400" >BASIC INFORMATION</h4>
 
@@ -50,9 +50,9 @@ const RegisterForm = () => {
                             <input type="text" name="company" placeholder="Company Name"/>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000" className="inputGroup">
-                            <label>Selected Package</label>
+                            <label>Select Plan</label>
                             <select name="package" id="package">
-                                <option className="isOPtion" value="">Select a Package</option>
+                                <option className="isOPtion" value="">Select a Plan</option>
                                 <option className="isOPtion" value="MULTIPLE LITE PLAN">MULTIPLE LITE PLAN</option>
                                 <option className="isOPtion" value="UNLIMITED PLAN">UNLIMITED PLAN</option>
                                 <option className="isOPtion" value="MULTIPLE PLAN">MULTIPLE PLAN</option>

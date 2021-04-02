@@ -13,7 +13,7 @@ const Portfolio = () => {
         <PortfolioStyle id="portfolio">
             <div className="container">
                 <h1 data-aos="fade-up" data-aos-duration="1000">All your graphic design needs under one roof</h1>
-                <p data-aos="fade-up" data-aos-duration="1000">These are samples of some of our work. Logos, packaging 
+                <p data-aos="fade-up" data-aos-duration="1000">These are samples of some of our works. Logos, packaging 
                     and label, Print media - Stationeries, business cards, brochures, Social Media - Blog images, facebook, 
                     instagram, sliders, headers, animated GIFs and many more.</p>
 

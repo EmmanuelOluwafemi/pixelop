@@ -8,6 +8,7 @@ import How from '../components/How';
 import Portfolio from '../components/Portfolio';
 import Pricing from '../components/Pricing';
 import Testimonial from '../components/Testimonial';
+import Clients from '../components/Clients';
 
 import AOS from "aos";
 
@@ -25,6 +26,7 @@ const Home = () => {
             <How />
             <Pricing />
             <Testimonial />
+            <Clients />
             <Cta />
             {/* <Costomers /> */}
             <Footer />

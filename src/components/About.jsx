@@ -15,7 +15,7 @@ const About = () => {
                     <div className="col-md-6">
                         <h6 data-aos="fade-right" data-aos-duration="1000">Good Design is Good Business</h6>
                         <h2 data-aos="fade-right" data-aos-duration="1200">The perfect design plug for your business</h2>
-                        <p data-aos="fade-right" data-aos-duration="1400">Delegate your designs to experts who truly understand your brand, vision and values</p>
+                        <p data-aos="fade-right" data-aos-duration="1400">Delegate your designs to experts who truly understand your brand, vision and values.</p>
 
                         <div data-aos="fade-right" data-aos-duration="1600" className="row iconContainer">
                             <div className="col-md-6 icons">
@@ -30,7 +30,7 @@ const About = () => {
                                 <div className="imageContainer">
                                     <img src={support} alt="Easy to use"/>
                                 </div>
-                                <h3>Customer Support:</h3>
+                                <h3>Customer Support</h3>
                                 <p>Your dedicated pixelopers will support 
                                     you on anything you need.</p>
                             </div>

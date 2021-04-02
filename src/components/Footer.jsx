@@ -11,10 +11,10 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h4>Ready to get started?</h4>
-                        <p>Pixelop is a brand agency offering multiple 
-                        and unlimited design solution for SMEs as well 
-                        as startup on a monthly flat fee.</p>
+                        <h4>A new way to get many quality graphic designs done</h4>
+                        <p>Whether you're just starting your business or you are growing sales into millions, 
+                        we will help you grow your business through our multiple 
+                        and unlimited graphic design solutions.</p>
                         <Link className="cta" to="/register">Get Started</Link>
                     </div>
                     <div className="copyright col-md-6">

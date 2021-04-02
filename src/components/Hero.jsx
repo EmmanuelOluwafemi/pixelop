@@ -19,7 +19,7 @@ const Hero = () => {
                         <p data-aos="fade-right" data-aos-duration="1000" className="rating"> <AiFillStar className="icons" /> Top design company </p>
                         <h1 data-aos="fade-right" data-aos-duration="1200">Multiple and unlimited Graphic Designs for your business.</h1>
                         <p data-aos="fade-right" data-aos-duration="1400">Pixelop is a brand agency offering multiple and unlimited design solution for 
-                            SMEs as well as startup on a monthly flat fee.</p>
+                            SMEs as well as startups on a monthly flat fee.</p>
                         <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">Start For Free</Link>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">

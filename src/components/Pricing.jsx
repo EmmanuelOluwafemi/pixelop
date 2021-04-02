@@ -19,11 +19,11 @@ const Pricing = () => {
                             <h5>Multiple Lite Plan</h5>
                             <h2>₦15,000 <span>/ month</span></h2>
                             <p>Best for individuals and small businesses.</p>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Up to 10 requests</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Limited Revision</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Single Brand</div>
-                            <div className="list stroke"><IoMdCheckmark className="markIcon" /> No trial</div>
-                            <div className="list stroke"><IoMdCheckmark className="markIcon" /> No discount</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Up to 10 requests.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Limited Revision.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Single Brand.</div>
+                            <div className="list stroke"><IoMdCheckmark className="markIcon" /> No trial.</div>
+                            <div className="list stroke"><IoMdCheckmark className="markIcon" /> No discount.</div>
 
                             <Link to='/register'>Get Started</Link>
                         </div>
@@ -31,23 +31,23 @@ const Pricing = () => {
                     <div data-aos="fade-up" data-aos-duration="1200" className="col-md-4 mb-3 mb-md-0 cardContainer">
                         <div className="gridCard">
                             <h5>UNLIMITED PLAN <span>Popular</span></h5>
-                            <h2>₦15,000 <span>/ month</span></h2>
+                            <h2>₦70,000 <span>/ month</span></h2>
                             <p>Best for individuals and small businesses.</p>
                             <h3>SAVE 20% on first month</h3>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Request</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Revisions</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Brands</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Request.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Revisions.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Brands.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Free Stock Images.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Dedicated design team.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Calender and Project base requests.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> 1 Project Free Trial.</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Fast Turn-arounds</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Full ownership of files</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Web and Print-ready files</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Includes Custom illustration</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Includes Animated GIFs</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Advanced Infographics</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Presentation Decks</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Fast Turn-arounds.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Full ownership of files.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Web and Print-ready files.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Includes Custom illustration.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Includes Animated GIFs.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Advanced Infographics.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Presentation Decks.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Real-time customer support.</div>
 
                             <Link to='/register'>Get Started</Link>
@@ -59,9 +59,9 @@ const Pricing = () => {
                             <h2>₦45,000 <span>/ month</span></h2>
                             <p>Best for entrepreneurs and social/digital marketers.</p>
                             <h3>SAVE 20% on first month</h3>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Up-to 30 Requests</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Revisions</div>
-                            <div className="list"><IoMdCheckmark className="markIcon" /> Multiple Brands</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Up-to 30 Requests.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Revisions.</div>
+                            <div className="list"><IoMdCheckmark className="markIcon" /> Multiple Brands.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Free Stock Images.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Calender based requests.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> 3 Days free trial.</div>

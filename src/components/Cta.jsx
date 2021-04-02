@@ -13,7 +13,7 @@ const Cta = () => {
                     </div>
                     <div className="user-content col-md-6">
                         <h2 data-aos="fade-left" data-aos-duration="1200">LET’S BUILD SOLUTIONS TOGETHER</h2>
-                        <h5 data-aos="fade-left" data-aos-duration="1400">Emmanuel Oluyole</h5>
+                        <h5 data-aos="fade-left" data-aos-duration="1400">Akanni Emmanuel</h5>
                         <p data-aos="fade-left" data-aos-duration="1600">Team Lead, Pixelop</p>
                     </div>
 
