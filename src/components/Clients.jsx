@@ -51,7 +51,7 @@ const ClientStyle = Styled.div`
         }
 
         @media (max-width: 768px) {
-            height: 35px;
+            height: 30px;
             margin-bottom: 1.4rem;
         }
     }
