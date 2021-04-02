@@ -49,6 +49,11 @@ const ClientStyle = Styled.div`
         &:first-child {
             margin-left: 0;
         }
+
+        @media (max-width: 768px) {
+            height: 35px;
+            margin-bottom: 1.4rem;
+        }
     }
 `;
 
