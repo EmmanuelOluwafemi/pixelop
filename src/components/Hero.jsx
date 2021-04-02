@@ -20,7 +20,7 @@ const Hero = () => {
                         <h1 data-aos="fade-right" data-aos-duration="1200">Multiple and unlimited Graphic Designs for your business.</h1>
                         <p data-aos="fade-right" data-aos-duration="1400">Pixelop is a brand agency offering multiple and unlimited design solution for 
                             SMEs as well as startups on a monthly flat fee.</p>
-                        <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">Start For Free</Link>
+                        <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">See Pricing</Link>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">
                         <img data-aos="fade-left" data-aos-duration="1000" src={heroImage} alt="pixel loop mark"/>
@@ -71,6 +71,9 @@ const HeroStyle = Styled.section`
             text-transform: uppercase;
             font-family: 'Montserrat', sans-serif;
             max-width: 216px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition: all .2s ease-in;
 
             &:hover {
