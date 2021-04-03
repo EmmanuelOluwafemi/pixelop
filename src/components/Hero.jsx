@@ -6,7 +6,6 @@ import herobg from '../utilities/images/herobg.png';
 import heroImage from '../utilities/images/heroImage.png';
 
 import { AiFillStar } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -20,7 +19,7 @@ const Hero = () => {
                         <h1 data-aos="fade-right" data-aos-duration="1200">Multiple and unlimited Graphic Designs for your business.</h1>
                         <p data-aos="fade-right" data-aos-duration="1400">Pixelop is a brand agency offering multiple and unlimited design solution for 
                             SMEs as well as startups on a monthly flat fee.</p>
-                        <Link data-aos="fade-right" data-aos-duration="1600" to="/register" className="cta">See Pricing</Link>
+                        <a data-aos="fade-right" data-aos-duration="1600" href="/#pricing" className="cta">See Pricing</a>
                     </div>
                     <div className="col-md-6 col-lg-5 logomark">
                         <img data-aos="fade-left" data-aos-duration="1000" src={heroImage} alt="pixel loop mark"/>

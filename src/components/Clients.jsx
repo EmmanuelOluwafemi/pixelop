@@ -17,7 +17,7 @@ const Clients = () => {
             <Heading>Brands we have worked with</Heading>
             <ClientStyle>
                 <img src={client1} alt="clients logo"/>
-                <img src={client2} alt="clients logo"/>
+                <img className="sm" src={client2} alt="clients logo"/>
                 <img src={client9} alt="clients logo"/>
                 <img src={client3} alt="clients logo"/>
                 <img src={client4} alt="clients logo"/>
@@ -46,6 +46,11 @@ const ClientStyle = Styled.div`
         margin-left: 1rem;
         margin-right: 1rem;
 
+        &.sm {
+            height: 120px;
+            margin-top: -26px;
+        }
+
         &:first-child {
             margin-left: 0;
         }
@@ -53,6 +58,11 @@ const ClientStyle = Styled.div`
         @media (max-width: 768px) {
             height: 30px;
             margin-bottom: 1.4rem;
+
+            &.sm {
+                height: 60px;
+                margin-top: -16px;
+            }
         }
     }
 `;

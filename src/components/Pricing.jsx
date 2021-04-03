@@ -32,7 +32,7 @@ const Pricing = () => {
                         <div className="gridCard">
                             <h5>UNLIMITED PLAN <span>Popular</span></h5>
                             <h2>₦70,000 <span>/ month</span></h2>
-                            <p>Best for individuals and small businesses.</p>
+                            <p>Best for agencies and small businesses.</p>
                             <h3>SAVE 20% on first month</h3>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Request.</div>
                             <div className="list"><IoMdCheckmark className="markIcon" /> Unlimited Revisions.</div>

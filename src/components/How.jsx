@@ -15,7 +15,7 @@ const How = () => {
 
                     <img className="img-fluid web" src={work} alt="work illustration"/>
                     <img className="img-fluid mobile" src={workMb} alt="work illustration"/>
-                    <Link to="/register">Order Now</Link>
+                    <Link to="/register">Start Now</Link>
 
                 </div>
             </div>
